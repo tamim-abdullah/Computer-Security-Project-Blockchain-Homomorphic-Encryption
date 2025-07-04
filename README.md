@@ -1,73 +1,41 @@
-# EHR 2.0
+# Title: Blockchain Based Medical Report Encryption
 
+**Course:** CSE 4531 Computer Security  
+**Group Members:**  
+- Tamim Abdullah (011211072)  
+- MD Redwan Rahman Ornob (011211001)  
+- Mahmud Hasan Shanto (011213052)  
+- Nousin Rahman Nahin (0112310573)  
 
-## Live
-Live site hosted in firebase
- [Click here](https://ehr-2-0.web.app/)
+---
 
-## For Full working project 
+## Motivation of this project
 
--- Apponitments <br>
--- Pdf upload <br>
--- and much more. <br>
+Medical reports are crucial for proper treatment, but they can be altered with bad intentions, leading to misdiagnosis, incorrect treatments, and legal complications. To ensure trust between patients, doctors, and hospitals, we need a secure system that prevents unauthorized changes.
 
-Demo : [Youtube](https://youtu.be/d_-pWoGgdVs)
-<br>
-Setup : [Youtube](https://youtube.com/playlist?list=PL54V-i7zW55d1VKxEkp9DCPt5k_zE6m3X)
+We propose to use blockchain-based technology to protect medical records. Any modification is permanently recorded, showing unauthorized changes to the reports, ensuring transparency and easy tracking of report updates. Our goal is to use homomorphic encryption and blockchain technology to develop a security framework preventing fraudulent activities related to medical records.
 
-contact : 
-[Mail](mailto:tshamil90@gmail.com?Subject=ehr-blockchain&Body=Hi,)
-`tshamil90@gmail.com`
+---
 
-🆁🅴🆀🆄🅸🆁🅴🅼🅴🅽🆃🆂
+## Plan of Execution
 
-1.Install nodeJs
+1. Utilize a distributed ledger to store encrypted medical records, ensuring data integrity and availability.
+2. Implement homomorphic encryption to allow computations on encrypted data without revealing sensitive information. Before uploading to the blockchain, encrypt medical records using homomorphic encryption techniques.
+3. Store the encrypted data on the blockchain, ensuring traceability.
+4. Implement smart contracts to manage data access permissions, data sharing, and consent management, ensuring only authorized entities can access specific records.
+5. Maintain logs of data access and modifications to enhance transparency and accountability.
 
-* [Node JS](https://nodejs.org/en/download/)
+---
 
-2.Install Ganache
+## Benefits
 
-* [Ganache Truffle](https://www.trufflesuite.com/ganache)
+| **Benefit**                  | **Description**                                                                 |
+|------------------------------|------------------------------------------------------------------------------|
+| Medical records stay untouched | Blockchain ensures no one can modify or tamper with stored medical reports (Test results, Prescriptions, etc.) |
+| Patient data remains private   | Homomorphic encryption ensures sensitive pieces of information remain protected |
+| Secure data processing         | Homomorphic encryption allows queries and computations without decrypting patient data |
+| Every action is traceable      | A verifiable audit trail logs every access and modification |
+| Only the right people get access | Smart contracts strictly control who can view or modify records |
+| Full transparency              | Keeping logs of all access ensures accountability and trust |
 
-3. Download IPFS (kubo)
-
-* [IPFS Kubo](https://dist.ipfs.tech/#go-ipfs)
-
-  - configure ipfs refer: https://github.com/shamil-t/ehr-blockchain/issues/15#issuecomment-1333342345
-
-4.Add Metamask Extension in Browser
-
-* [Metamask Chrome](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en-US)
-
-5. open cmd in project directory
-
-```
-npm install --force
-```
-
-5.open cmd/terminal as Administrator and type
-
-```
-npm install -g truffle
-```
-
-6.open Ganache
- 
- *  New Workspace
- *  AddProject
- *  Select truffle-config.js in Project Directory
- *  Save Workspace
-
-7.Compile and migrate Contracts
- ```
- truffle migrate
- ```
-8. Run Server
-
-```
-npm start
-```
-
-Known Issue: (https://github.com/shamil-t/ehr-blockchain/issues/15)
-
-
+---
